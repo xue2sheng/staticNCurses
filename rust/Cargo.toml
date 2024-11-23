@@ -1,0 +1,12 @@
+[package]
+name = "staticNCurses"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+ncurses = "6.0.1"
+
+[target.aarch64-apple-darwin]
+rustflags = [
+    "-C", "link-arg=-static"
+]

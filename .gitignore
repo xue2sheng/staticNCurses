@@ -85,4 +85,6 @@ xcuserdata/
 .cproject
 .settings/
 
+# This project
 cpp/build
+rust/target
