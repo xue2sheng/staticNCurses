@@ -2,11 +2,11 @@
 name = "staticNCurses"
 version = "0.1.0"
 edition = "2021"
+build = "build.rs"
 
 [dependencies]
 ncurses = "6.0.1"
+libc = "0.2.164"
 
-[target.aarch64-apple-darwin]
-rustflags = [
-    "-C", "link-arg=-static"
-]
+[build-dependencies]
+cc = "1.2.1"
